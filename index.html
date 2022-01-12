@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arkanoid</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <br>
-    <canvas id="myCanvas" width="600" height="320"></canvas>
-    <script src="main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arkanoid</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <br>
+        <div><canvas id="myCanvas" width="600" height="320" style="display: none;"></canvas></div>
+        <div id="landing"><button id="start" onclick="draw();"> Start </button></div>
+        <div id="pausedGame" style="display: none;">Game is paused</div>
+        <script src="main.js"></script>
+    </body>
 </html>
